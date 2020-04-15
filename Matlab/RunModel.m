@@ -2,6 +2,9 @@
 % We will run the model for a period of 10 minutes (600 Seconds)
 % The time resolution of 10 seconds gives us 60 update iterations 
 
+% Setup the model 
+SetUp
+
 % Declare the NodalTempHistoryMatrix 
 NodalTempHistory = zeros(9,60);
 
