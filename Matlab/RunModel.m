@@ -23,6 +23,7 @@ hold on
 for i = 1: size(NodalTempHistory,1)
     subplot(3,3,i)
     plot(NodalTempHistory(i,:));
+    title(NodeNames(i,:));
 end
 hold off
 
