@@ -4,7 +4,7 @@ function color = getcolor(cmap,temp)
     % to 800
 
     for i=1:size(cmap,1)
-       if(i>=(temp-750))
+       if(i>=(temp-740))
            color = cmap(i,:);
            break;
        end

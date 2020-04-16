@@ -54,7 +54,7 @@ nodalmapping = [7 8 8 9 9 8 8 7;
                 1 2 2 3 3 2 2 1];
 %% Define a color map 
 cmap = cool(65);
-
+colormap(cmap)
 %% 
 % for each time in the temp history matrix 
 for t=1:size(NodalTempHistory,2)
@@ -65,6 +65,8 @@ for t=1:size(NodalTempHistory,2)
        end
     end
     title(sprintf('Nodal Temperature Distribution at %0.2f Seconds',(t*10)));
-    pause(0.05);
+    colorbar();
+    pause(0.02);
 end
+
 
