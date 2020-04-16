@@ -14,8 +14,8 @@ cwater = [0 0 1];
 
 figure
 hold on 
-xlim ([0 20])
-ylim ([0 20])
+xlim ([0 12])
+ylim ([0 10])
 pbaspect([1 1 1])
 
 %% Define the corner points 
@@ -64,6 +64,7 @@ for t=1:size(NodalTempHistory,2)
             rectangle('Position',[j,i,0.8,0.8],'FaceColor',getcolor(cmap,NodalTempHistory(nodalmapping(i,j),t)),'EdgeColor','k','LineWidth',1)
        end
     end
+    title(sprintf('Nodal Temperature Distribution at %0.2f Seconds',(t*10)));
     pause(0.05);
 end
 
